@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/renewal.css" />
+
+  <link rel="shortcut icon" href="/img/logo_icon.jpg" type="image/x-icon" />
+  <title>Register for Training</title>
+</head>
+
+<body>
+  <!-- <div class="container-fluid top-nav">
+    <div class="container container-lg">
+      <div class="row">
+        <div class="col-l top-nav-items">
+          <ul class="top_nav_contacts">
+            <li>
+              <a href="tel:+231 775 642 667 ">
+                <img width="12px" src="./img/liberia.svg" alt="Flag" />
+                +231 775 642 667
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col top-nav-items">
+          <ul class="top_nav_social">
+            <li>
+              <a href="https://www.facebook.com/CS-Solutions-Inc-1071269682944006/"><i
+                  class="fab fa-facebook"></i>&nbsp;&nbsp;</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div> -->
+ <nav class="navbar navbar-expand-lg main-nav   sticky-top">
+    <div class="container-fluid container-lg">
+      <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png" alt="logo" /></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarId"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar"> </span>
+        <span class="toggler-icon middle-bar"> </span>
+        <span class="toggler-icon bottom-bar"> </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarId">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active"> Home </a>
+          </li>
+          <li class="nav-item product-dropdown">
+            <a href="products.html" class="nav-link">
+              Products&nbsp;<i class="fas fa-caret-down"></i>
+            </a>
+
+            <div class="dropdown_menu">
+              <a href="products.html">Sophos </a>
+              <a href="Renewals.html#form">Eset</a>
+              <a href="Renewals.html#form">Finger Tech</a>
+              <a href="Renewals.html#form">WatchGuard</a>
+              <a href="Renewals.html#form">Cisco</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="training.html" class="nav-link"> Training </a>
+          </li>
+          <li class="nav-item">
+            <a href="support.html" class="nav-link"> Support</a>
+          </li>
+          <li class="nav-item">
+            <a href="Renewals.html" class="nav-link">
+              Renewal and Licensing
+            </a>
+          </li>
+          <li class="nav-item about-dropdown" >
+            <a href="about.html" class="nav-link">
+              About Us &nbsp; <i class="fas fa-caret-down"></i></a>
+
+            <div class="about-dropdown-menu">
+              <a href="#"> CS Money </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link"> Contact Us</a>
+          </li>
+        </ul>
+        
+        
+
+      </div>
+    
+    </div>
+  </nav>
+
+  <div class="container-fluid main-container">
+    <div class="container">
+      <div class="main-content">
+        <h2 data-aos="fade-down">Register for your Sophos certification.</h2>
+      </div>
+    </div>
+  </div>
+  <!-- Training Form -->
+
+  <div class="container-sm p-3">
+    <form method="POST" action="/success.html" data-netlify="true" name="course">
+      <div class="row">
+        <div class="col-sm mb-3 form-group required">
+          <label for="full-name" class="form-label">Full Name:</label>
+          <input type="text" class="form-control" name="name" id="full-name" placeholder="John Smith" required />
+        </div>
+        <div class="col-sm mb-3 form-group required">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="johnsmith@example.com"
+            required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm mb-3 form-group">
+          <label for="institution" class="form-label">Institution:</label>
+          <input type="text" class="form-control" name="institution" id="institution"
+            placeholder="eg. CS Solutions Inc." required />
+        </div>
+        <div class="col-sm mb-3 form-group">
+          <label for="role" class="form-label">Role:</label>
+          <input type="text" class="form-control" id="role" name="role" placeholder="eg. Network Administrator"
+            required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm mb-3 form-group required">
+          <label for="phone" class="form-label">Telephone Number:</label>
+          <input type="tel" class="form-control" name="telephone" id="phone" placeholder="+231 775 642 667" required />
+        </div>
+        <div class="col-sm form-group required">
+          <label class="control-label">Course:</label>
+          <div>
+            <select id="product" name="course" class="form-control" required>
+              <optgroup label="Sophos Firewall">
+                <option value="Sophos Firewall v20.0 ">
+                  Sophos Firewall v20.0 <b>*New*</b>
+                </option>
+                <option value="Sophos Firewall v19 - Engineer">
+                  Sophos Firewall v19 - Engineer
+                </option>
+                <option value="Sophos Firewall v18.5 - Engineer">
+                  Sophos Firewall v18.5 - Engineer
+                </option>
+                <option value="Sophos Firewall v18.5 -Architect">
+                  Sophos Firewall v18.5 -Architect
+                </option>
+                <option value="XG Firewall v18.0 - Technician ">
+                  XG Firewall v18.0 - Technician
+                </option>
+              </optgroup>
+              <optgroup label="Sophos Central:">
+                <option value="Sophos Central Endpoint and Server v3.0 -Engineer">
+                  Sophos Central Endpoint and Server v3.0 -Engineer
+                </option>
+                <option value="Central Endpoint and Server v3.0 -Architect">
+                  Central Endpoint and Server v3.0 -Architect
+                </option>
+                <option value="Sophos Central Endpoint and Server v3.0 - Technical ">
+                  Sophos Central Endpoint and Server v3.0 - Technician
+                </option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3 pl-3">
+        <div>Do you have any Sophos Certification?</div>
+        <div class="form-check">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="yes" name="certify" value="YES" checked required />
+            <label class="form-check-label" for="yes">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="no" name="certify" value="No" checked required />
+            <label class="form-check-label" for="no">No </label>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <button type="submit" class="btn-block btn-lg btn-primary active">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Training Form Ends -->
+
+  <!-- Footer -->
+  <div class="footer-container">
+    <div class="container">
+      <div class="footer-items row">
+        <div class="footer-logo col-lg-4">
+          <h3>CS Solutions Inc.</h3>
+          <p>
+            CS Solutions is a 100% Liberian Information Technology Enterprise
+            operating in Liberia. Our vision is to be the leader in IT managed
+            support services and provide our esteemed customers, IT solutions
+            geared towards achieving a peace of mind.
+          </p>
+        </div>
+        <div class="products col-lg">
+          <h3>Products</h3>
+          <ul>
+            <li>
+              <i class="fas fa-angle-double-right"></i><a href="Renewal and.html#form"> Sophos </a>
+            </li>
+            <li>
+              <i class="fas fa-angle-double-right"></i><a href="Renewal and.html#form"> ESET </a>
+            </li>
+            <li>
+              <i class="fas fa-angle-double-right"></i><a href="Renewal and.html#form"> FingerTec </a>
+            </li>
+            <li>
+              <i class="fas fa-angle-double-right"></i><a href="Renewal and.html#form"> WatchGuard </a>
+            </li>
+            <li>
+              <i class="fas fa-angle-double-right"></i><a href="Renewal and.html#form"> ZKTeco </a>
+            </li>
+            <li>
+              <i class="fas fa-angle-double-right"></i><a href="Renewal and.html#form"> Siemon </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="links col-lg">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <i class="fas fa-angle-double-right"></i><a href="index.html"> Home </a>
+            </li>
+            <li>
+              <i class="fas fa-angle-double-right"></i><a href="products.html"> Products</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-double-right"></i><a href="training.html"> Training</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-double-right"></i><a href="about.html"> About</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-double-right"></i><a href="contact.html"> Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="location col-lg-3">
+          <h3>Location</h3>
+          <p> Kabba Building
+            2nd Floor
+            Benson & Mechlin streets
+            Monrovia, Liberia
+          </p>
+          <ul>
+            <li>
+              <i class="fas fa-angle-double-right"></i>
+              <a href="tel:(+231) 775 642 667">
+                <i class="fas fa-phone-square-alt"></i> &nbsp; (+231) 775 642
+                667
+              </a>
+            </li>
+            <li>
+              <i class="fas fa-angle-double-right"></i>
+              <a href="tel:
+                (+231) 880 723 003">
+                <i class="fas fa-phone-square-alt"></i> &nbsp; (+231) 880 723
+                003
+              </a>
+            </li>
+          </ul>
+          <a href="https://www.facebook.com/CS-Solutions-Inc-1071269682944006/"><i
+              class="fab fa-facebook"></i>&nbsp;&nbsp;</a>
+          <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="elfsight-app-8cf8353f-b4f1-4575-b1d2-0ca14e6289c6"></div>
+
+  <!-- Copy- Right -->
+  <div class="copy-right">
+    CS Solutions, Inc. &copy;
+    <script type="text/javascript">
+      var year = new Date();
+      document.write(year.getFullYear());
+    </script>
+    . All Rights Reserved.
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
